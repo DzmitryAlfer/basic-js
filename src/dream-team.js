@@ -9,7 +9,7 @@ module.exports = function createDreamTeam(members) {
     .filter(x => typeof x === 'string')
     .map(x => x.trim())
     .filter(x => x.length > 0)
-    .map(x => [0].toUpperCase())
+    .map(x => x[0].toUpperCase())
     .sort()
     .join('');
 };
